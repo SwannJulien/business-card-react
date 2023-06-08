@@ -3,17 +3,14 @@ import React from "react";
 function Footer() {
   return (
     <section className="footer">
-      <a href="#">
-        <img src="" alt="" />
+      <a href="https://github.com/SwannJulien" target="_blank">
+        <i class="fa-brands fa-github fa-xl"></i>
       </a>
-      <a href="#">
-        <img src="" alt="" />
+      <a href="https://www.linkedin.com/in/swannjulien/">
+        <i class="fa-brands fa-linkedin fa-xl"></i>
       </a>
-      <a href="#">
-        <img src="" alt="" />
-      </a>
-      <a href="#">
-        <img src="" alt="" />
+      <a href="https://swannjulien.com/">
+        <i class="fa-solid fa-globe fa-xl"></i>
       </a>
     </section>
   );

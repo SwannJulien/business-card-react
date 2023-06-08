@@ -50,6 +50,8 @@ a {
   --clr-dark-400: #23252c;
   --clr-dark-600: #1a1b21;
   --clr-light: #fff;
+  --clr-accent: #f3be99;
+  --clr-blue: #4f93e2;
 
   --ff-main: "Inter", sans-serif;
   --fs-400: clamp(1.6rem, 1vw + 0.5rem, 2rem);
@@ -87,7 +89,7 @@ html {
 }
 
 .info__role {
-  color: #f3be99;
+  color: var(--clr-accent);
 }
 
 .info__web {
@@ -105,7 +107,7 @@ html {
 }
 
 .button:first-of-type {
-  margin-right: 30px;
+  margin-right: 3rem;
 }
 
 .button--email {
@@ -117,7 +119,7 @@ html {
 }
 
 .button--linkedIn {
-  background-color: #4f93e2;
+  background-color: var(--clr-blue);
 }
 
 .button > a {
@@ -136,6 +138,16 @@ h2 {
 }
 
 a {
-  /* display: block; */
-  color: #fff;
+  color: var(--clr-light);
+}
+
+.footer {
+  background-color: var(--clr-dark-600);
+  height: 10vh;
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+
+.footer > a {
+  margin-right: 3rem;
 }
