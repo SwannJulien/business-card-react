@@ -1,5 +1,7 @@
+/*-------------------*/
+/*       RESET       */
+/*-------------------*/
 /* Josh Comeau CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-11*/
-
 *,
 *::before,
 *::after {
@@ -37,22 +39,103 @@ h6 {
   overflow-wrap: break-word;
 }
 
+a {
+  text-decoration: none;
+}
+/*-------------------*/
+/* Custom properties */
+/*-------------------*/
+
+:root {
+  --clr-dark-400: #23252c;
+  --clr-dark-600: #1a1b21;
+  --clr-light: #fff;
+
+  --ff-main: "Inter", sans-serif;
+  --fs-400: clamp(1.6rem, 1vw + 0.5rem, 2rem);
+  --fs-600: clamp(2.4rem, 1vw + 1.25rem, 3rem);
+  --fs-800: clamp(3.2rem, 2vw + 1rem, 3.8rem);
+}
+
+/*-------------------*/
+/*    GLOBAL STYLES  */
+/*-------------------*/
+
 body {
-  background-color: #23252c;
-  color: #fff;
-  font-family: "Inter", sans-serif;
+  background-color: var(--clr-dark-400);
+  color: var(--clr-light);
+  font-family: var(--ff-main);
+  font-size: var(--fs-400);
+}
+
+html {
+  font-size: 62.5%;
 }
 
 .wrapper {
   text-align: center;
-  width: clamp(30rem, 90vw, 50rem);
+  width: clamp(48rem, 90vw, 80rem);
   margin: 0 auto;
 }
 
-h1 {
-  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+.info__title {
+  font-size: var(--fs-800);
 }
 
-img {
+.info__img {
   width: clamp(100px, 50%, 300px);
+}
+
+.info__role {
+  color: #f3be99;
+}
+
+.info__web {
+  display: block;
+}
+
+.button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.button:first-of-type {
+  margin-right: 30px;
+}
+
+.button--email {
+  background-color: var(--clr-light);
+}
+
+.button--email a {
+  color: black;
+}
+
+.button--linkedIn {
+  background-color: #4f93e2;
+}
+
+.button > a {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.about {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: var(--fs-600);
+}
+
+a {
+  /* display: block; */
+  color: #fff;
 }

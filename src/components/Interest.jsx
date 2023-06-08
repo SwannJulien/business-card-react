@@ -2,10 +2,10 @@ import React from "react";
 
 function Interest() {
   return (
-    <>
+    <section className="interest">
       <h2>Interest</h2>
-      <p>Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.</p>
-    </>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus dignissimos libero illum architecto deserunt culpa delectus aperiam aliquid? Ex fugit quis voluptate ipsum doloribus sapiente quod dolorum impedit ullam.</p>
+    </section>
   );
 }
 

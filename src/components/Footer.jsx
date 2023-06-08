@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <>
+    <section className="footer">
       <a href="#">
         <img src="" alt="" />
       </a>
@@ -15,7 +15,7 @@ function Footer() {
       <a href="#">
         <img src="" alt="" />
       </a>
-    </>
+    </section>
   );
 }
 
