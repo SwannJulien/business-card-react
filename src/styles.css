@@ -2,6 +2,7 @@
 /*       RESET       */
 /*-------------------*/
 /* Josh Comeau CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/#our-finished-product-11*/
+
 *,
 *::before,
 *::after {
@@ -80,6 +81,10 @@ html {
   margin: 0 auto;
 }
 
+/*-------------------*/
+/* COMPONENTS STYLES */
+/*-------------------*/
+
 .info__title {
   font-size: var(--fs-800);
 }
@@ -94,6 +99,7 @@ html {
 
 .info__web {
   display: block;
+  color: var(--clr-light);
 }
 
 .button {
@@ -122,6 +128,10 @@ html {
   background-color: var(--clr-blue);
 }
 
+.button--linkedIn > a {
+  color: var(--clr-light);
+}
+
 .button > a {
   display: flex;
   justify-content: center;
@@ -135,10 +145,6 @@ html {
 
 h2 {
   font-size: var(--fs-600);
-}
-
-a {
-  color: var(--clr-light);
 }
 
 .footer {
